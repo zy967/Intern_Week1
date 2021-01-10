@@ -1,7 +1,7 @@
 public class LinkedList<T> {
     private Node<T> head = null;
     private Node<T> tail = null;
-    int size = 0;
+    private int size = 0;
 
     public LinkedList() {
 
@@ -108,5 +108,6 @@ public class LinkedList<T> {
     public void clear() {
         this.head = new Node<T>(null);
         this.tail = this.head;
+        size = 0;
     }
 }
